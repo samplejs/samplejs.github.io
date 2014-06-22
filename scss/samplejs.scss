@@ -1,0 +1,25 @@
+body {
+	font-family: "Myriad Pro", Verdana, Arial, Tahoma;
+}
+
+h2#title a {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+h2#title a:hover {
+    color: #ccc;
+}
+
+nav {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sub-nav {
+    margin-top: 1.1rem;
+}
+
+footer {
+    margin-top: 20px;
+}
