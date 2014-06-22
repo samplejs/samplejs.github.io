@@ -23,7 +23,7 @@
                 "startDate": "1995,05",
                 "endDate": "1995,05",
                 "headline": "Influences",
-                "text": "<ul><li>Based on Scheme (a Lisp dialect)</li><li>This led to JavaScript having closures</li><li>Also influenced by Self, which has prototypal inheritance</li><li>Syntax is taken from C</li></ul>",
+                "text": "<ul><li>Based on Scheme (a Lisp dialect).</li><li>This led to JavaScript having closures.</li><li>Also influenced by Self, which has prototypal inheritance.</li><li>Syntax is taken from C.</li></ul>",
                 "asset":
                 {
                     "media": "http://en.wikipedia.org/wiki/Scheme_(programming_language)"
