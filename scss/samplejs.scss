@@ -2,6 +2,10 @@ body {
 	font-family: "Myriad Pro", Verdana, Arial, Tahoma;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 h2#title a {
     font-size: 1.6rem;
     color: #666;
@@ -18,6 +22,16 @@ nav {
 
 .sub-nav {
     margin-top: 1.1rem;
+}
+
+#timeline-embed ul {
+  list-style-type: circle;
+  list-style-position: outside;
+  margin-left: 1rem;
+
+  li {
+      margin-bottom: 0.6rem;
+  }
 }
 
 footer {

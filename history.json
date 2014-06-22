@@ -1,39 +1,92 @@
 {
     "timeline":
     {
-        "headline":"The Main Timeline Headline Goes here",
-        "type":"default",
-        "text":"<p>Intro body text goes here, some HTML is ok</p>",
+        "headline": "JavaScript",
+        "type": "default",
+        "text": "A Brief History",
         "asset": {
-            "media":"http://yourdomain_or_socialmedialink_goes_here.jpg",
-            "credit":"Credit Name Goes Here",
-            "caption":"Caption text goes here"
+            "media": "/img/history/js-logo.jpg"
         },
         "date": [
             {
-                "startDate":"2011,12,10",
-                "endDate":"2011,12,11",
-                "headline":"Headline Goes Here",
-                "text":"<p>Body text goes here, some HTML is OK</p>",
-                "tag":"This is Optional",
-                "classname":"optionaluniqueclassnamecanbeaddedhere",
-                "asset": {
-                    "media":"http://twitter.com/ArjunaSoriano/status/164181156147900416",
-                    "thumbnail":"optional-32x32px.jpg",
-                    "credit":"Credit Name Goes Here",
-                    "caption":"Caption text goes here"
+                "startDate": "1995,05",
+                "endDate": "1995,05",
+                "headline": "Genesis",
+                "text": "<ul><li>Created in 10 days in May 1995 by Brendan Eich, then of Netscape.</li><li>A rush job, due to commercial pressure.</li></ul>",
+                "asset":
+                {
+                    "media": "<blockquote>\"If I had done classes in JavaScript back in May 1995, I would have been told that it was too much like Java or that JavaScript was competing with Java ... I was under marketing orders to make it look like Java but not make it too big for its britches … [it] needed to be a silly little brother language.\"</blockquote>",
+                    "credit": "Brendan Eich"
                 }
+            },
+            {
+                "startDate": "1995,05",
+                "endDate": "1995,05",
+                "headline": "Influences",
+                "text": "<ul><li>Based on Scheme (a Lisp dialect)</li><li>This led to JavaScript having closures</li><li>Also influenced by Self, which has prototypal inheritance</li><li>Syntax is taken from C</li></ul>",
+                "asset":
+                {
+                    "media": "http://en.wikipedia.org/wiki/Scheme_(programming_language)"
+                }
+            },
+            {
+                "startDate": "1995,09",
+                "endDate": "1995,09",
+                "headline": "What's in a name?",
+                "text": "<ul><li>The original name in May 1995 was Mocha.</li><li>This changed in September 1995 to LiveScript.</li><li>In December 1995 Sun granted a trademark license for the term \"Java\" and so the name was changed again to JavaScript.</li><li>Java was very popular at the time, and it was hoped that JavaScript would ride the Java wave.</li></ul>"
+            },
+            {
+                "startDate": "1996",
+                "endDate": "1997",
+                "headline": "Standardisation",
+                "text": "<ul><li>In 1996 – 97 JavaScript was taken to ECMA (European Computer Manufacturers Association) for standardisation, so that browser vendors other than Netscape could produce implementations.</li><li>ECMAScript is the name given to the standard ECMA262-1, with JavaScript being the most popular implementation.</li><li>ActionScript 3 is another well known implementation of ECMAScript, but with extensions.</li></ul>"
+            },
+            {
+                "startDate": "1998",
+                "endDate": "2000",
+                "headline": "Further standards",
+                "text": "<ul><li>ECMAScript 2 was released in 1998.</li><li>ECMAScript 3 in 1999.</li><li>ECMAScript 3 is the baseline for modern JavaScript in the browser.</li><li>The original ES4 work started in 2000 and seemed to go well, with Microsoft even implementing some of the proposals in their JScript.NET language.</li></ul>"
+            },
+            {
+                "startDate": "2000",
+                "endDate": "2003",
+                "headline": "ES4 grinds to a halt",
+                "text": "<ul><li>It became clear after a while that Microsoft weren't going to implement standard ECMAScript in IE.</li><li>The .NET language also diverged.</li><li>By 2003, the original ES4 work was mothballed.</li></ul>"
+            },
+            {
+                "startDate": "2005",
+                "endDate": "2008",
+                "headline": "ECMAScript 3.1 anyone?",
+                "text": "<ul><li>Brendan Eich (now at Mozilla) started work on “E4X” (ECMA-357) in 2005.</li><li>He joined forces with Macromedia (later bought by Adobe) who were implementing E4X in Action Script 3.</li><li>Adobe released AVM2 (ActionScript VM) and ActionScript 3 but it was realised in 2007 / 8 that these would never converge with JavaScript.</li><li>At the same time, Douglas Crockford (then at Yahoo) joined forces with Microsoft to oppose ES4, and the ES3.1 effort was born.</li></ul>"
+            },
+            {
+                "startDate": "2005",
+                "endDate": "2005",
+                "headline": "Ajax",
+                "text": "<ul><li>In 2005, Jesse James Garrett released a white paper in which he coined the term Ajax (Asynchronous JavaScript and XML).</li><li>This allows JavaScript code to retrieve data from a server (rather than entire web pages) and update parts of a page, leading to more light weight and more responsive web pages.</li><li>This resulted in a renaissance for JavaScript, with the release of open source libraries such as Protoype, jQuery, Dojo and Mootools.</li></ul>",
+                "asset": {
+                    "media": "http://en.wikipedia.org/wiki/Ajax_(programming)"
+                }
+            },
+            {
+                "startDate": "2008,07",
+                "endDate": "2009",
+                "headline": "ECMAScript 5",
+                "text": "<ul><li>In July of 2008 the disparate parties on either side of the ECMAScript 4 schism came together in Oslo.</li><li>In early 2009 an agreement was reached to rename ES3.1 to ES5 and push the language forward using an agenda known as Harmony.</li></ul>"
+            },
+            {
+                "startDate": "2014",
+                "endDate": "2014",
+                "headline": "Current hot topics",
+                "text": "<ul><li>Google’s V8 JavaScript engine implements ECMAScript 5.</li><li>NodeJS is gaining popularity on the server side.</li><li>HTML5 includes many additional JavaScript APIs.</li></ul>"
             }
         ],
         "era": [
             {
-                "startDate":"2011,12,10",
-                "endDate":"2011,12,11",
-                "headline":"Headline Goes Here",
-                "text":"<p>Body text goes here, some HTML is OK</p>",
-                "tag":"This is Optional"
+                "startDate": "1980,05,01",
+                "endDate": "2020,05,01",
+                "headline": "JavaScript: A Brief History"
             }
-
         ]
     }
 }
