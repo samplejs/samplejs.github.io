@@ -1,0 +1,14 @@
+---
+layout: default
+title: samples
+---
+
+<h1>{{ page.title }}</h1>
+{{ content }}
+{% for pageResource in page.resources %}    
+    {% for resource in site.categories['resources'] %}        
+        {% if resource.resourceid == pageResource %}
+            <p>{{ resource.title }}</p>
+        {% endif %}
+    {% endfor %}  
+{% endfor %}

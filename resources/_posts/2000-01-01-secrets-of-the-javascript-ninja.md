@@ -1,7 +1,7 @@
 ---
 layout: resource
-title: Secrets of the JavaScript ninja
+title: "Secrets of the JavaScript ninja"
 type: book
-tags: introduction
+resourceid: ninja
 ---
 

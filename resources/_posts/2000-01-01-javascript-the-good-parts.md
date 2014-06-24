@@ -1,7 +1,7 @@
 ---
 layout: resource
-title: JavaScript, The Good Parts
+title: "JavaScript: The Good Parts"
 type: book
-tags: introduction
+resourceid: goodparts
 ---
 

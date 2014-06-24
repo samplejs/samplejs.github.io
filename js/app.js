@@ -2,5 +2,5 @@
 
 $(function () {
     "use strict";
-    $(document).foundation();
+    // $(document).foundation();
 });

@@ -4,13 +4,15 @@ title: samplejs - resources
 ---
 
 <div>
-    <h1>Resources</h1>    
-    {% for resource in site.categories['resources'] %}
-        {% capture currenttags %}{{resource.tags}}{% endcapture %}
-        {% if currenttags != tags %}
-        <li>{{ currenttags }}</li>
-            {% capture tags %}{{currenttags}}{% endcapture %} 
-        {% endif %}
-        <li><a href="{{ resource.url }}">{{ resource.title }}</a></li>
-    {% endfor %}    
+    <h1>resources</h1>    
+    {% for sample in site.categories['samples'] %}
+        <h2>{{ sample.title }}</h2>
+        {% for resourceId in sample.resources %}            
+            {% for resource in site.categories['resources'] %}                   
+                {% if resource.resourceid == resourceId %}
+                    <p>{{ resource.title }} <small>{{ resource.type }}</small></p>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: resource
-title: Functions resource
+title: "Functions resource"
 type: book
-tags: functions
+resourceid: func1
 ---
 

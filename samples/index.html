@@ -3,4 +3,7 @@ layout: default
 title: samplejs
 ---
 
-<p>coming soon!</p>
+<h1>samples</h1>    
+{% for sample in site.categories['samples'] %}
+    <p><a href="{{ sample.url }}">{{ sample.title }}</a></p>
+{% endfor %}
