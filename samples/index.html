@@ -3,7 +3,11 @@ layout: default
 title: samplejs
 ---
 
-<h1>samples</h1>    
-{% for sample in site.categories['samples'] %}
-    <p><a href="{{ sample.url }}">{{ sample.title }}</a></p>
-{% endfor %}
+<div class="row">
+    <div class="large-12 columns">
+        <h1>samples</h1>        
+        {% for sample in site.categories['samples'] %}
+            <p><a href="{{ sample.url }}">{{ sample.title }}</a></p>
+        {% endfor %}
+    </div>
+</div>
