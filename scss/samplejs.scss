@@ -30,12 +30,13 @@ h2 {
     font-size: 1.4rem;
 }
 
-h2#title a {
+#title {
+    margin-top: 1.1rem;
     font-size: 1.6rem;
     color: #666;
 }
 
-h2#title a:hover {
+#title {
     color: #ccc;
 }
 

@@ -2,10 +2,15 @@
 layout: sample
 title: introduction
 resources: [
+    mdn,
+    superherojs,
+    learningadvancedjs,    
+    jsbin,
+    jsfiddle,
+    plunker,    
     goodparts,
     ninja,
-    learningadvancedjs,
-    superherojs
+    definitiveguide
 ]
 ---
 
