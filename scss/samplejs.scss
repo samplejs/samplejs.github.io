@@ -51,14 +51,41 @@ nav {
     margin-top: 1.1rem;
 }
 
+@-webkit-keyframes sway {
+    0% {         
+        -webkit-transform: rotate(0deg);
+        transform-origin: 50% 75%;
+    }      
+    33% { 
+        -webkit-transform: rotate(20deg); 
+        transform-origin: 50% 75%;
+    }
+    66% { 
+        -webkit-transform: rotate(-20deg); 
+        transform-origin: 50% 75%;
+    }
+    100% { 
+        -webkit-transform: rotate(0deg); 
+        transform-origin: 50% 75%;
+    }
+}
+
 /* footer */
 footer {
     margin: 50px 0;
     text-align: center;
     
+    /* love */
     span {
         color: #f54141;
         text-shadow: 1px 1px 1px #D3C1C1;
+                
+        -webkit-animation-name: sway;
+        -webkit-animation-duration: 0.8s;
+        -webkit-animation-timing-function: ease-in-out;        
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
     }
 }
 
