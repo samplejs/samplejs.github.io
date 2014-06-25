@@ -13,19 +13,7 @@ title: samplejs - resources
                     {% for resource in site.categories['resources'] %}
                         {% if resource.resourceid == resourceid %}
                             <li>
-                                <a href="{{ resource.link }}"><strong>{{ resource.type }}</strong>{{ resource.title }} 
-                                    <span>
-                                    {% if resource.type == "book" %}
-                                        {% for authorid in resource.authors %}                                            
-                                            {% for author in site.categories['authors'] %}                                                
-                                                {% if author.authorid == authorid %}
-                                                    {{ author.title }}
-                                                {% endif %}
-                                            {% endfor %}                                            
-                                        {% endfor %}
-                                    {% endif %}
-                                    </span>
-                                </a>
+                                <a href="{{ resource.link }}"><strong>{{ resource.type }}</strong>{{ resource.title }} <span class="show-for-medium-up">{{ resource.source }}</span></a>
                             </li>
                         {% endif %}
                     {% endfor %}
