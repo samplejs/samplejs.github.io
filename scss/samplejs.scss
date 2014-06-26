@@ -63,8 +63,8 @@ nav {
     66% { 
         -webkit-transform: rotate(-20deg); 
         transform-origin: 50% 75%;
-    }
-    100% { 
+    } 
+    100% {
         -webkit-transform: rotate(0deg); 
         transform-origin: 50% 75%;
     }
@@ -77,6 +77,7 @@ footer {
     
     /* love */
     span {
+        display: inline-block;
         color: #f54141;
         text-shadow: 1px 1px 1px #D3C1C1;
                 
