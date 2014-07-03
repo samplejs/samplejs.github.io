@@ -25,8 +25,7 @@ codepens: [
     { title: "Fundamentals - NaN", slug: "guast" },
     { title: "Fundamentals - Semi-colon insertion", slug: "ygEGz" },
     { title: "Fundamentals - Array coercion", slug: "GqEkd" },
-    { title: "Fundamentals - Arrays are objects", slug: "KgjIw" },
-    { title: "Fundamentals - Adding objects and arrays", slug: "iGqyx" },
+    { title: "Fundamentals - Arrays are objects", slug: "KgjIw" },    
     { title: "Fundamentals - Integer representation", slug: "JHlKy" }
 ]
 ---
