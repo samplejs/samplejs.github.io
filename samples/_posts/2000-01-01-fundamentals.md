@@ -12,8 +12,8 @@ resources: [
     ninja,
     definitiveguide
 ]
-codepens: [
-	BIhtC
+codepens: [    
+    { title: "Fundamentals - Unitialised variables", slug: "CafDu" }
 ]
 ---
 
