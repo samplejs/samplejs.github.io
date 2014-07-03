@@ -1,6 +1,6 @@
 ---
 layout: sample
-title: introduction
+title: fundamentals
 resources: [
     mdn,
     superherojs,
@@ -11,6 +11,9 @@ resources: [
     goodparts,
     ninja,
     definitiveguide
+]
+codepens: [
+	BIhtC
 ]
 ---
 
