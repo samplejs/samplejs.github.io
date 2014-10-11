@@ -5,8 +5,7 @@ layout: default
 <div class="row">
     <div class="large-12 columns">
         <h1>{{ page.title }}</h1>
-        {% for codepen in page.codepens %}
-            {% include codepen-sample.html slug=codepen.slug title=codepen.title %}
-        {% endfor %}
+        {{ content }}
+        </ul>
     </div>
 </div>
