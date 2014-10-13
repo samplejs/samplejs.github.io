@@ -14,7 +14,7 @@ resources: [
 ]
 ---
 
-{% include codepen-sample.html title="Fundamentals - Uninitialised variables" slug="CafDu" %}
+{% include codepen-sample.html title="Fundamentals - Uninitialised variables" slug="daioy" %}
 
 {% include codepen-sample.html title="Fundamentals - Reserved Words" slug="BIhtC" %}
 
