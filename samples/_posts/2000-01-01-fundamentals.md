@@ -12,22 +12,35 @@ resources: [
     ninja,
     definitiveguide
 ]
-codepens: [
-    { title: "Fundamentals - Reserved Words", slug: "BIhtC" },
-    { title: "Fundamentals - Unitialised variables", slug: "CafDu" },
-    { title: "Fundamentals - Undeclared variables", slug: "fKuqJ" },
-    { title: "Fundamentals - Null and undefined equality", slug: "izsbd" },
-    { title: "Fundamentals - Number storage", slug: "BhGmc" },
-    { title: "Fundamentals - Assignment vs equality", slug: "rhtgk" },
-    { title: "Fundamentals - typeof values", slug: "ICHxg" },
-    { title: "Fundamentals - no return statement", slug: "cadwy" },
-    { title: "Fundamentals - subtracting strings", slug: "hbrqj" },
-    { title: "Fundamentals - NaN", slug: "guast" },
-    { title: "Fundamentals - Semi-colon insertion", slug: "ygEGz" },
-    { title: "Fundamentals - Array coercion", slug: "GqEkd" },
-    { title: "Fundamentals - Arrays are objects", slug: "KgjIw" },    
-    { title: "Fundamentals - Integer representation", slug: "JHlKy" }
-]
 ---
 
-Below are a collection of resources aimed to give you an overview of the fundamentals of the JavaScript language.
+{% include codepen-sample.html title="Fundamentals - Uninitialised variables" slug="CafDu" %}
+
+{% include codepen-sample.html title="Fundamentals - Reserved Words" slug="BIhtC" %}
+
+{% include codepen-sample.html title="Fundamentals - Number storage" slug="BhGmc" %}
+
+{% include codepen-sample.html title="Fundamentals - Integer representation" slug="JHlKy" %}
+
+{% include codepen-sample.html title="Fundamentals - subtracting strings" slug="hbrqj" %}
+
+{% include codepen-sample.html title="Fundamentals - Null and undefined equality" slug="izsbd" %}
+
+{% include codepen-sample.html title="Fundamentals - Undeclared variables" slug="fKuqJ" %}
+
+{% include codepen-sample.html title="Fundamentals - NaN" slug="guast" %}
+
+{% include codepen-sample.html title="Fundamentals - Assignment vs equality" slug="rhtgk" %}
+
+{% include codepen-sample.html title="Fundamentals - Arrays are objects" slug="KgjIw" %}
+
+{% include codepen-sample.html title="Fundamentals - Array coercion" slug="GqEkd" %}
+
+{% include codepen-sample.html title="Fundamentals - typeof values" slug="ICHxg" %}
+
+{% include codepen-sample.html title="Fundamentals - Adding objects and arrays" slug="iGqyx" %}
+
+{% include codepen-sample.html title="Fundamentals - no return statement" slug="cadwy" %}
+
+{% include codepen-sample.html title="Fundamentals - Semi-colon insertion" slug="ygEGz" %}
+
