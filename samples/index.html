@@ -5,8 +5,9 @@ title: samplejs
 
 <div class="row">
     <div class="large-12 columns">
-        <h1>samples</h1>        
-        {% for sample in site.categories['samples'] %}
+        <h1>samples</h1>
+        {% assign sorted_pages = site.categories['samples'] | sort:"date" %}
+        {% for sample in sorted_pages %}
             <p><a href="{{ sample.url }}">{{ sample.title }}</a></p>
         {% endfor %}
     </div>
