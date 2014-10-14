@@ -14,55 +14,59 @@ resources: [
 ]
 ---
 
-provide an overview of all we want to discuss in this section
+==provide an overview of all we want to discuss in this section==
+
+==brief explaination of ```console.log``` (as our examples will depend on it) and how it works with string and number literals==
 
 ##variables
 
-introduce variables in Javascript
+In JavaScript a variable is defined using `var name;` or with defined with a value using `var name = value;`.
 
-brief explaination of ```console.log``` (as our examples will depend on it) and how it works with string and number literals
+For defined variables that have not been assigned a value, JavaScript does not prevent them from being accessed.  In the code below, we see unassigned variables have an `undefined` value until a value is assigned.
 
-cover how variables are ```undefined``` until they are assigned a value
+{% include codepen-sample.html title="fundamentals - value of variables" slug="daioy" %}
 
-{% include codepen-sample.html title="fundamentals - value of variables" slug="CafDu" %}
-
-finally, warn that reserved words in Javascript can not be variable names
+We need to be careful with our naming of variables, for they must not be any of the [reserved words](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Reserved_keywords_as_of_ECMAScript_6).  This is demonstrated in the code sample below:
 
 {% include codepen-sample.html title="fundamentals - avoiding reserved words" slug="BIhtC" %}
 
 ##primitive data types
 
-introduce the concept of primitive data types in Javascript, https://developer.mozilla.org/en-US/docs/Glossary/Primitive , (```Number```, ```String```, ```Boolean```, ```null```, ```undefined```)
+In the JavaScript language, we have access to the following [primitive data types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive); `Number`, `String`, `Boolean`, `null` and `undefined`.
 
 > codepen title: 'fundamentals - primitive data types'
 
-define ```truthy``` and ```falsy```
+These types can be evaluated as ```truthy``` and ```falsy``` based upon the values that they hold.  The code below has a more indepth look at each type.
 
 > codepen title: 'fundamentals - truthy and falsy values'
 
-explain that JavaScript has global properties and that these will be explained further on -- ```null```, ```undefined```, ```NaN```, ```Infinity```
+As we have looked at primitive data types, we should also be aware of the [global properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#Value_properties) exposed to us in JavaScript.  We have already seen are `null` and `undefined`, yet we have not come across `NaN` and `Infinity` before.  All of these global properties will be expanded upon later on.
 
 ##arithmetic operators
 
-introduce what an arithmetic operators are
+As part of the JavaScript library we have operators that allow us to perform [addition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Addition), [subtraction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Subtraction), [division](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Division), [multiplication](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Multiplication) and calculate the [remainder](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder):
 
-> codepen title: 'fundamentals - arithmetic operations'
+{% include codepen-sample.html title="fundamentals - arithmetic operations" slug="tbwpg" %}
 
-explain the considerations you should make when doing arithmetic with decimal numbers
+We need to be careful when carrying out arithmetic with 'decimal' numbers, as rounding errors are introduced:
 
 {% include codepen-sample.html title="fundamentals - precision of decimal numbers" slug="BhGmc" %}
 
-explain the limitations in JavaScript with doing arithmetic with large numbers
+In JavaScript, we are able to do more complex mathimatics with the [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) global object.  However we make also take care when dealing with large numbers:
 
 {% include codepen-sample.html title="fundamentals - precision of large numbers" slug="JHlKy" %}
 
 explain the basic idea of `NaN` and `Infinity`
 
-> codepen title: 'fundamentals - mathematics of NaN and Infinity'
+{% include codepen-sample.html title="fundamentals - mathematics of NaN and Infinity" slug="GLAic" %}
 
-finally discuss what happens when you accidently do arithmetic on a string
+Before we leave arithmetic operators, lets consider how they operate with strings and booleans.  When using strings:
 
-{% include codepen-sample.html title="fundamentals - subtraction with strings" slug="hbrqj" %}
+{% include codepen-sample.html title="fundamentals - arithmetic operations with strings" slug="hbrqj" %}
+
+For arithmetic operators on booleans values:
+
+{% include codepen-sample.html title="fundamentals - arithmetic operations with booleans" slug="milpD" %}
 
 ##equality operators
 
