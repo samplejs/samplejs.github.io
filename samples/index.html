@@ -8,7 +8,7 @@ title: samplejs
         <h1>samples</h1>
         {% assign sorted_pages = site.categories['samples'] | sort:"date" %}
         {% for sample in sorted_pages %}
-            <p><a href="{{ sample.url }}">{{ sample.title }}</a></p>
+            <p><a href="{{ site.baseurl }}/{{ sample.url }}">{{ sample.title }}</a></p>
         {% endfor %}
     </div>
 </div>
