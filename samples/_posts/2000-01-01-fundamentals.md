@@ -1,7 +1,7 @@
 ---
 layout: sample
 title: 'fundamentals'
-description: 'variables, primitive types and arithmetic'
+description: 'Defining variables, introducing primitive types and demonstrating arithmetic.'
 resources: [
     mdn,
     superherojs,
@@ -23,13 +23,13 @@ For defined variables that have not been assigned a value, JavaScript does not p
 
 {% include codepen-sample.html title="fundamentals - value of variables" slug="daioy" %}
 
-We need to be careful with our naming of variables, for they must not be any of the [reserved words](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#Reserved_keywords_as_of_ECMAScript_6).  This is demonstrated in the code sample below:
+We need to be careful with our naming of variables, for they must not be any of the {% include mdn-link.html label="reserved words" href="Web/JavaScript/Reference/Lexical_grammar#Reserved_keywords_as_of_ECMAScript_6" %}.  This is demonstrated in the code sample below:
 
 {% include codepen-sample.html title="fundamentals - avoiding reserved words" slug="BIhtC" %}
 
 ##primitive data types
 
-In the JavaScript language, we have access to the following [primitive data types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive); `Number`, `String`, `Boolean`, `null` and `undefined`.
+In the JavaScript language, we have access to the following {% include mdn-link.html label="primitive data types" href="Glossary/Primitive" %}; `Number`, `String`, `Boolean`, `null` and `undefined`.
 
 {% include codepen-sample.html title="fundamentals - primitive data types" slug="epivf" %}
 
@@ -44,15 +44,21 @@ These types can be evaluated as ```truthy``` and ```falsy``` based upon the valu
 
 All other values are truthy.
 
-As we have looked at primitive data types, we should also be aware of the [global properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects#Value_properties) exposed to us in JavaScript.
+As we have looked at primitive data types, we should also be aware of the {% include mdn-link.html label="global properties" href="Web/JavaScript/Reference/Global_Objects#Value_properties" %} exposed to us in JavaScript.
 
 ##arithmetic operators
 
-As part of the JavaScript library we have operators that allow us to perform [addition](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Addition), [subtraction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Subtraction), [division](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Division), [multiplication](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Multiplication) and calculate the [remainder](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder):
+As part of the JavaScript library we have operators that allow us to perform
+{% include mdn-link.html label="addition" href="Web/JavaScript/Reference/Operators/Arithmetic_Operators#Addition" %},
+{% include mdn-link.html label="subtraction" href="Web/JavaScript/Reference/Operators/Arithmetic_Operators#Subtraction" %},
+{% include mdn-link.html label="division" href="Web/JavaScript/Reference/Operators/Arithmetic_Operators#Division" %},
+{% include mdn-link.html label="multiplication" href="Web/JavaScript/Reference/Operators/Arithmetic_Operators#Multiplication" %} and calculate the
+{% include mdn-link.html label="remainder" href="Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder" %}:
 
 {% include codepen-sample.html title="fundamentals - arithmetic operations" slug="tbwpg" %}
 
-In JavaScript, a number has a [double-precision 64-bit binary format (IEEE 754)](http://en.wikipedia.org/wiki/Double_precision_floating-point_format) representation, which supports numbers between <code>-(2<sup>53</sup>-1)</code> and <code>2<sup>53</sup>-1</code> without loss of integer precision. The [`Math` global object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) allows use to easily create these large numbers:
+In JavaScript, a number has a [double-precision 64-bit binary format (IEEE 754)](http://en.wikipedia.org/wiki/Double_precision_floating-point_format) representation, which supports numbers between <code>-(2<sup>53</sup>-1)</code> and <code>2<sup>53</sup>-1</code> without loss of integer precision. The
+{% include mdn-link.html code="Math" href="Web/JavaScript/Reference/Global_Objects/Math" %} global object allows us to easily create these large numbers:
 
 {% include codepen-sample.html title="fundamentals - precision of large numbers" slug="JHlKy" %}
 
