@@ -1,17 +1,7 @@
 ---
 layout: sample
 title: 'fundamentals: equality, comparison and logical operators'
-resources: [
-    mdn,
-    superherojs,
-    learningadvancedjs,
-    jsbin,
-    jsfiddle,
-    plunker,
-    goodparts,
-    ninja,
-    definitiveguide
-]
+resources: []
 ---
 
 ##equality operators

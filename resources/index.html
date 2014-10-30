@@ -5,10 +5,11 @@ title: samplejs - resources
 
 <div class="row">
     <div class="large-12 columns">
-        <h1>resources</h1>    
-        {% for sample in site.categories['samples'] %}
+        <h1>resources</h1>
+        {% assign sorted_pages = site.categories['samples'] | sort:"date" %}
+        {% for sample in sorted_pages %}
             <h2>{{ sample.title }}</h2>
-            <ul class="resources clearfix">            
+            <ul class="resources clearfix">
                 {% for resourceid in sample.resources %}
                     {% for resource in site.categories['resources'] %}
                         {% if resource.resourceid == resourceid %}
@@ -17,7 +18,7 @@ title: samplejs - resources
                             </li>
                         {% endif %}
                     {% endfor %}
-                {% endfor %}            
+                {% endfor %}
             </ul>
         {% endfor %}
     </div>

@@ -1,17 +1,7 @@
 ---
 layout: sample
 title: 'fundamentals: objects, arrays and functions'
-resources: [
-    mdn,
-    superherojs,
-    learningadvancedjs,
-    jsbin,
-    jsfiddle,
-    plunker,
-    goodparts,
-    ninja,
-    definitiveguide
-]
+resources: []
 ---
 
 ##object basics
