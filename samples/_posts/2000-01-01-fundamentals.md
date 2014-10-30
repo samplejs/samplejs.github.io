@@ -1,6 +1,7 @@
 ---
 layout: sample
-title: 'fundamentals: variables, primitive types and arithmetic'
+title: 'fundamentals'
+description: 'variables, primitive types and arithmetic'
 resources: [
     mdn,
     superherojs,

@@ -1,6 +1,7 @@
 ---
 layout: sample
-title: 'fundamentals: equality, comparison and logical operators'
+title: 'operators'
+description: 'equality, comparison and logical operators'
 resources: []
 ---
 

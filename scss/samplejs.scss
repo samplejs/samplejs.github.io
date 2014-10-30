@@ -106,6 +106,25 @@ div.codepen-sample {
     margin-bottom: 20px;
 }
 
+$samples-border: .09rem solid #f0f0f0;
+ul.samples {
+    border-top: $samples-border;
+    
+    li {
+        list-style-type: none;
+        
+        a {
+            display: block;
+            padding: .3rem 0;
+            border-bottom: $samples-border;
+            
+            span {
+                float: right;
+            }
+        }
+    }
+}
+
 /* resources */
 $resources-border: .09rem solid #f0f0f0;
 ul.resources {
@@ -133,8 +152,8 @@ ul.resources {
             }
             
             span {
-                float: right; 
+                float: right;
             }
         }
-    }   
+    }
 }
