@@ -9,7 +9,11 @@ resources: [
     docs-arguments-object,
     docs-array-prototype-slice,
     optimization-killers-managing-arguments,
-    docs-return
+    docs-this,
+    docs-function-prototype-call,
+    docs-function-prototype-apply,
+    docs-return,
+    docs-typeof
 ]
 ---
 
@@ -30,27 +34,45 @@ Functions can be defined as a {% include inline-resource.html label="function de
 
 ##passing values into functions
 
-Functions allow values to be passed in via arguments properties set in its definition.  However, this is not to only data passed into the function, there are also the `arguments` and `this` variables that get populated:
+Functions allow values to be passed in via arguments properties set in its definition.  However, this is not the only data passed into a function.  There are also the `arguments` and `this` variables, that become available:
 
 {% include codepen-sample.html title="functions - passing values in" slug="jhdzE" %}
 
 
-##the arguments variable
+##the arguments object
 
-The {% include inline-resource.html code="arguments object" resource="docs-arguments-object" %} looks very much like an array, however it is just an object with indexed properties.  In the code below, it shows a method to convert this object into an array using the {% include inline-resource.html code="Array.prototype.slice()" resource="docs-array-prototype-slice" %} function:
+The {% include inline-resource.html code="arguments" resource="docs-arguments-object" %} object looks very much like an array, however it is just an object with indexed properties.  In the code below, it shows a method to convert this object into an array using the {% include inline-resource.html code="Array.prototype.slice()" resource="docs-array-prototype-slice" %} function:
 
 {% include codepen-sample.html title="functions - arguments and this" slug="ibEfa" %}
 
-When using `arguments`, there are {% include inline-resource.html label="some performance issues" resource="optimization-killers-managing-arguments" %} that may need to be considered -&mdash; which will be important if and when code optimisation is an issue.
+When using `arguments`, there are {% include inline-resource.html label="some performance issues" resource="optimization-killers-managing-arguments" %} that may need to be considered &mdash; which will be important if and when code optimisation becomes an issue.
 
 
-##invocation approaches
+##the this keyword
 
-Invocation
+For a function, the context of the {% include inline-resource.html code="this" resource="docs-this" %} keyword depends on how the functions is invoked.
+
+When invoked as a function, as has been shown so far, `this` represents the global context &mdash; meaning it will contain all variables that have been defined globally.
+
+However, when the function is invoked in alternative ways, the context of `this` changes ...
+
+##multiple ways to invoke a function
+
+So far on this page every function has been invoked on their own, however it turns out that JavaScript provides at least five invocation approaches:
+
+1. As a function &mdash; `myfunction(arg1, arg2);` _ALREADY COVERED_
+2. As a method on an object &mdash; `myobject.afunction(arg1, arg2);`
+3. As a constructor &mdash; `var anInstance = new MyFunction(arg1, arg2);`
+4. Via the `call()` &mdash;  `myfunction.call(thisContext, arg1, arg2);`
+5. Via the `apply()` &mdash; `myfunction.apply(thisContext, anArrayOfArguments);`
+
+When the function is invoked as a method, the `this` keyword is set with the context of the object before the `.` symbol.  For a constructor, the context of `this` is a new object.
+
+In the code below, there are examples showing method and constructor invocations:
 
 {% include codepen-sample.html title="functions - invocation approaches" slug="ItvLx" %}
 
-Forcing the context
+The {% include inline-resource.html code="call()" resource="docs-function-prototype-call" %} and {% include inline-resource.html code="apply()" resource="docs-function-prototype-apply" %} functions allow the context of `this` to be changed programatically:
 
 {% include codepen-sample.html title="functions - forcing the context" slug="swbaf" %}
 
@@ -69,17 +91,14 @@ Both these cases are shown below:
 
 ##scope of variables
 
-- By functions, not blocks
+The scope of a variable defines its accessibility and lifetime.  Unlike many other languages, the scope of a variable is based upon functions &mdash; for example languages that are C based are block based.  The code below shows how the scope of a variable works in action:
 
 {% include codepen-sample.html title="functions - scope" slug="CnIDc" %}
 
 
-##inline functions
-
-{% include codepen-sample.html title="functions - inline functions" slug="myxoC" %}
-
-
 ##is it a function?
+
+When checking whether a variable is a function, the {% include inline-resource.html code="typeof" resource="docs-typeof" %} operator may be used and it will often give the correct result.  There are some browser edge cases where this may not work, so in the code below there is another test which is believed to be more accurate:
 
 {% include codepen-sample.html title="functions - is it a function?" slug="LmlHD" %}
 
