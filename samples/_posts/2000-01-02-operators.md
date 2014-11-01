@@ -2,7 +2,10 @@
 layout: sample
 title: 'operators'
 description: 'Testing equality, performing comparisons and using logical operators.'
-resources: []
+resources: [
+    mdn-guide-expressions-and-operators,
+    mdn-guide-sameness-in-javascript
+]
 ---
 
 ##equality operators

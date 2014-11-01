@@ -2,7 +2,9 @@
 layout: sample
 title: 'functions'
 description: 'Defining functions and covering the approaches for invoking them.'
-resources: []
+resources: [
+    mdn-guide-functions
+]
 ---
 
 In JavaScript, functions are treated as first class entities:

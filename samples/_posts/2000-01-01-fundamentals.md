@@ -3,15 +3,9 @@ layout: sample
 title: 'fundamentals'
 description: 'Defining variables, introducing primitive types and demonstrating arithmetic.'
 resources: [
-    mdn,
-    superherojs,
-    learningadvancedjs,
-    jsbin,
-    jsfiddle,
-    plunker,
-    goodparts,
-    ninja,
-    definitiveguide
+    mdn-guide-js-overview,
+    mdn-guide-values-variables-literals,
+    mdn-guide-statements
 ]
 ---
 

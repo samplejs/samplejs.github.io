@@ -2,7 +2,10 @@
 layout: sample
 title: 'objects and arrays'
 description: 'Fundamentals of objects, arrays and how they both are related.'
-resources: []
+resources: [
+    mdn-guide-working-with-objects,
+    mdn-guide-array-object
+]
 ---
 
 JavaScript allows you to create objects, read properties and set value of properties:
