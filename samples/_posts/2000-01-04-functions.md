@@ -3,7 +3,13 @@ layout: sample
 title: 'functions'
 description: 'Defining functions and covering the approaches for invoking them.'
 resources: [
-    mdn-guide-functions
+    mdn-guide-functions,
+    docs-function,
+    docs-function-expression,
+    docs-arguments-object,
+    docs-array-prototype-slice,
+    optimization-killers-managing-arguments,
+    docs-return
 ]
 ---
 
@@ -17,7 +23,7 @@ In JavaScript, functions are treated as first class entities:
 
 ##defining functions
 
-Functions can be defined as a {% include mdn-link.html label="function declaration" href="Web/JavaScript/Reference/Statements/function" %} or a {% include mdn-link.html label="function literal" href="Web/JavaScript/Reference/Operators/function" %}:
+Functions can be defined as a {% include inline-resource.html label="function declaration" resource="docs-function" %} or a {% include inline-resource.html label="function literal" resource="docs-function-expression" %}:
 
 {% include codepen-sample.html title="functions - function literals" slug="GqEkd" %}
 
@@ -31,11 +37,11 @@ Functions allow values to be passed in via arguments properties set in its defin
 
 ##the arguments variable
 
-The {% include mdn-link.html code="arguments" href="Web/JavaScript/Reference/Functions/arguments" %} variable looks very much like an array, however it is just an object with indexed properties.  In the code below, it shows a method to convert this object into an array using the {% include mdn-link.html code="Array.prototype.slice" href="Web/JavaScript/Reference/Global_Objects/Array/slice" %} function:
+The {% include inline-resource.html code="arguments object" resource="docs-arguments-object" %} looks very much like an array, however it is just an object with indexed properties.  In the code below, it shows a method to convert this object into an array using the {% include inline-resource.html code="Array.prototype.slice()" resource="docs-array-prototype-slice" %} function:
 
 {% include codepen-sample.html title="functions - arguments and this" slug="ibEfa" %}
 
-When using `arguments`, there are [some performance issues](https://github.com/petkaantonov/bluebird/wiki/Optimization-killers#3-managing-arguments) that may need to be considered.
+When using `arguments`, there are {% include inline-resource.html label="some performance issues" resource="optimization-killers-managing-arguments" %} that may need to be considered -&mdash; which will be important if and when code optimisation is an issue.
 
 
 ##invocation approaches
@@ -51,7 +57,7 @@ Forcing the context
 
 ##returning values
 
-A function is able to return a value with a {% include mdn-link.html code="return" href="Web/JavaScript/Reference/Statements/return" %} statement. A function returns `undefined` when:
+A function is able to return a value with a {% include inline-resource.html code="return" resource="docs-return" %} statement. A function returns `undefined` when:
 
 - there is no return statement in the function
 - there is line ending between `return` and the associated expression
