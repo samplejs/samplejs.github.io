@@ -8,3 +8,13 @@ var assert = function (actual, expectation, message) {
     para.appendChild(text);
     document.body.appendChild(para);
 };
+
+var assertIsNaN = function (nanValue, description) {
+    'use strict';
+    var outcome = isNaN(nanValue),
+        para = document.createElement('p'),
+        text = document.createTextNode(description);
+    para.className = outcome ? 'pass' : 'fail';
+    para.appendChild(text);
+    document.body.appendChild(para);
+};
