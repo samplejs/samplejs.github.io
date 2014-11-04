@@ -1,23 +1,26 @@
 (function () {
     'use strict';
 
-    function assert(actual, expectation, message) {
-        var outcome = arguments.length === 2 ? actual : actual === expectation,
-            description = arguments.length === 2 ? expectation : message,
-            para = document.createElement('p'),
+    function logAssertion(outcome, description) {
+        var para = document.createElement('p'),
             text = document.createTextNode(description);
         para.className = outcome ? 'pass' : 'fail';
         para.appendChild(text);
         document.body.appendChild(para);
     }
 
+    function assert(actual, expectation, description) {
+        if(arguments.length === 2) {
+            description = expectation;
+            logAssertion(actual, description);
+        } else if (arguments.length === 3) {
+            logAssertion(actual === expectation, description);
+        }
+    }
+
     function assertIsNaN(nanValue, description) {
-        var outcome = isNaN(nanValue),
-            para = document.createElement('p'),
-            text = document.createTextNode(description);
-        para.className = outcome ? 'pass' : 'fail';
-        para.appendChild(text);
-        document.body.appendChild(para);
+        if(arguments.length != 2) return;
+        logAssertion(isNaN(nanValue), description);
     }
 
     window.assert = assert;
