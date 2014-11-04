@@ -1,0 +1,10 @@
+@mixin resource-badge() {
+    margin: .3em .5em 0 0;
+    padding: .3em .5em;
+    line-height: 1;
+    font-size: .7em;
+    text-transform: lowercase;
+    background: #BBE5F9;
+    border-left: .5em solid #3387c4;
+    color: #3387c4;
+}

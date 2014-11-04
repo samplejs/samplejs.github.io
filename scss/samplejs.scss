@@ -28,6 +28,7 @@ h1 {
 h2 {
     color: #888;
     font-size: 1.4rem;
+    margin-top: 2.8rem;
 }
 
 #title {
@@ -52,20 +53,20 @@ nav {
 }
 
 @-webkit-keyframes sway {
-    0% {         
+    0% {
         -webkit-transform: rotate(0deg);
         transform-origin: 50% 75%;
-    }      
-    33% { 
-        -webkit-transform: rotate(20deg); 
+    }
+    33% {
+        -webkit-transform: rotate(20deg);
         transform-origin: 50% 75%;
     }
-    66% { 
-        -webkit-transform: rotate(-20deg); 
+    66% {
+        -webkit-transform: rotate(-20deg);
         transform-origin: 50% 75%;
     } 
     100% {
-        -webkit-transform: rotate(0deg); 
+        -webkit-transform: rotate(0deg);
         transform-origin: 50% 75%;
     }
 }
@@ -83,7 +84,7 @@ footer {
                 
         -webkit-animation-name: sway;
         -webkit-animation-duration: 0.8s;
-        -webkit-animation-timing-function: ease-in-out;        
+        -webkit-animation-timing-function: ease-in-out;
         -webkit-animation-iteration-count: infinite;
         -webkit-animation-direction: alternate;
         -webkit-animation-play-state: running;
@@ -106,6 +107,25 @@ div.codepen-sample {
     margin-bottom: 20px;
 }
 
+$samples-border: .09rem solid #f0f0f0;
+ul.samples {
+    border-top: $samples-border;
+    
+    li {
+        list-style-type: none;
+        
+        a {
+            display: block;
+            padding: .3rem 0;
+            border-bottom: $samples-border;
+            
+            span {
+                float: right;
+            }
+        }
+    }
+}
+
 /* resources */
 $resources-border: .09rem solid #f0f0f0;
 ul.resources {
@@ -120,21 +140,24 @@ ul.resources {
             border-bottom: $resources-border;
             
             strong {
+                @include resource-badge;
                 display: block;
                 float: left;
-                margin: .3em .5em 0 0;
-                padding: .3em .5em;
-                line-height: 1;
-                font-size: .7em;
-                text-transform: lowercase;
-                background: #BBE5F9;
-                border-left: .5em solid #3387c4;
-                color: #3387c4;
             }
             
             span {
-                float: right; 
+                float: right;
             }
         }
-    }   
+    }
+}
+
+a.resource-link {
+    span.badge {
+        @include resource-badge;
+    }
+    
+    code, span {
+        color: #3387c4;
+    }
 }

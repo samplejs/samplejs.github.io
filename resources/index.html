@@ -1,23 +1,47 @@
 ---
 layout: default
 title: samplejs - resources
+resources: [
+    goodparts,
+    ninja,
+    definitiveguide,
+    jsbin,
+    jsfiddle,
+    plunker,
+    superherojs,
+    learningadvancedjs
+]
 ---
 
 <div class="row">
     <div class="large-12 columns">
-        <h1>resources</h1>    
-        {% for sample in site.categories['samples'] %}
+        <h1>resources</h1>
+        {% assign resources = site.categories['resources'] %}
+        <h2>getting started</h2>
+        <ul class="resources clearfix">
+        {% for resourceid in page.resources %}
+            {% for resource in resources %}
+                {% if resource.resourceid == resourceid %}
+                    <li>
+                        <a href="{{ resource.link }}" target="_blank"><strong>{{ resource.type }}</strong>{{ resource.title }} <span class="show-for-medium-up">{{ resource.source }}</span></a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+        </ul>
+        {% assign sorted_pages = site.categories['samples'] | sort:"date" %}
+        {% for sample in sorted_pages %}
             <h2>{{ sample.title }}</h2>
-            <ul class="resources clearfix">            
+            <ul class="resources clearfix">
                 {% for resourceid in sample.resources %}
-                    {% for resource in site.categories['resources'] %}
+                    {% for resource in resources %}
                         {% if resource.resourceid == resourceid %}
                             <li>
-                                <a href="{{ resource.link }}"><strong>{{ resource.type }}</strong>{{ resource.title }} <span class="show-for-medium-up">{{ resource.source }}</span></a>
+                                <a href="{{ resource.link }}" target="_blank"><strong>{{ resource.type }}</strong>{{ resource.title }} <span class="show-for-medium-up">{{ resource.source }}</span></a>
                             </li>
                         {% endif %}
                     {% endfor %}
-                {% endfor %}            
+                {% endfor %}
             </ul>
         {% endfor %}
     </div>

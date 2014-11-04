@@ -1,0 +1,1 @@
+{% for resource in site.categories['resources'] %}{% if resource.resourceid == include.resource %}<a class="resource-link" href="{{ resource.link }}" target="_blank"><span class="badge">{{ resource.type }}</span><code>{{ include.code }}</code><span>{{ include.label }}</span></a>{% endif %}{% endfor %}
