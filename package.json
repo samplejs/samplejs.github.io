@@ -1,6 +1,10 @@
 {
-  "name": "foundation-libsass-template",
+  "name": "samplejs-github-page",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/samplejs/samplejs.github.io.git"
+  },
   "devDependencies": {
     "node-sass": "~0.7.0",
     "grunt": "~0.4.1",
