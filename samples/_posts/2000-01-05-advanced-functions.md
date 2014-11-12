@@ -26,7 +26,7 @@ In the code below is an example of the callback pattern:
 
 ##function overloading
 
-The aim of function overloading is to have several implementations a functions based upon the functions provided.  To achieve this `arguments.length` can be used to identify the number of arguments supplied:
+The aim of function overloading is to have several implementations of a function, that have different behaviours based upon the arguments provided.  To achieve this `arguments.length` can be used to identify the number of arguments supplied:
 
 {% include codepen-sample.html title="advanced functions - function overloading" slug="HEdvC" %}
 
