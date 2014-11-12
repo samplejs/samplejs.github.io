@@ -48,7 +48,7 @@ As shown in the code below, this can be achieved by ensuring all the fluent func
 
 ##memoization
 
-Memoization can be a helpful pattern, when a function invokation is expensive and it gets called multiple times with the same arguments.  Implementation for memoization can get complicated, especially when introducing a caching duration or passing around complex objects.
+Memoization can be a helpful pattern, when a function invocation is expensive and it gets called multiple times with the same arguments.  Implementation for memoization can get complicated, especially when introducing a caching duration or passing around complex objects.
 
 The code below shows a simple memoize function:
 
