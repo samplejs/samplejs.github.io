@@ -9,12 +9,26 @@
         document.body.appendChild(para);
     }
 
+    function areArraysEqual(actual, expected) {
+        if(actual.length !== expected.length) return false;
+
+        for (var i = 0; i < expected.length; i++) {
+            if (actual[i] != expected[i]) { return false; }
+        }
+
+        return true;
+    }
+
     function assert(actual, expectation, description) {
         if(arguments.length === 2) {
             description = expectation;
             logAssertion(actual, description);
         } else if (arguments.length === 3) {
-            logAssertion(actual === expectation, description);
+            var outcome = actual === expectation;
+            if(Array.isArray(actual) && Array.isArray(expectation)) {
+                outcome = areArraysEqual(actual, expectation);
+            }
+            logAssertion(outcome, description);
         }
     }
 
