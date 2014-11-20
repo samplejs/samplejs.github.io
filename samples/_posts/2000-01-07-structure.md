@@ -1,7 +1,7 @@
 ---
 layout: sample
 title: 'structure'
-description: '...'
+description: 'Using closures and prototypes to introduce structure and patterns.'
 resources: [
     immediately-invoked-function-expression,
     namespaces,
