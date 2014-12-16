@@ -9,6 +9,10 @@ resources: [
     docs-reserved-words,
     glossary-primitive,
     docs-global-properties,
+    docs-number-prototype-toexponential,
+    docs-number-prototype-tofixed,
+    docs-number-prototype-toprecision,
+    docs-number-prototype-tostring,
     docs-arithmetic-operators,
     double-precision-floating-point-format,
     docs-math
@@ -45,6 +49,18 @@ These types can be evaluated as ```truthy``` and ```falsy``` based upon the valu
 All other values are truthy.
 
 As we have looked at primitive data types, we should also be aware of the {% include inline-resource.html resource="docs-global-properties" label="global properties" %} exposed to us in JavaScript.
+
+##converting numbers to strings
+
+
+- {% include inline-resource.html code="toExponential()" resource="docs-number-prototype-toexponential" %} &mdash; _converts number into exponential notation, where the number of digits after decimal point can be specified_
+- {% include inline-resource.html code="toFixed()" resource="docs-number-prototype-tofixed" %} &mdash; _converts a number a fixed representation, where the number of digits after decimal point can be specified and defaults to 0_
+- {% include inline-resource.html code="toPrecision()" resource="docs-number-prototype-toprecision" %} &mdash; _converts number to a string, where the number significant digits can be specified_
+- {% include inline-resource.html code="toString()" resource="docs-number-prototype-tostring" %} &mdash; _converts number to string, where the base representation can be specified_
+  - `toString(2)` gives a binary representation
+  - `toString(16)` gives a hexadecimal representation
+
+{% include codepen-sample.html title="fundamentals - converting numbers to strings" slug="dPXozZ" %}
 
 ##arithmetic operators
 
