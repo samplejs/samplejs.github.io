@@ -8,10 +8,12 @@ resources: [
     mdn-guide-statements,
     docs-reserved-words,
     glossary-primitive,
+    docs-string-fromcharcode,
     docs-global-properties,
     docs-arithmetic-operators,
     double-precision-floating-point-format,
-    docs-math
+    docs-math,
+    docs-string-concat
 ]
 ---
 
@@ -29,7 +31,7 @@ We need to be careful with our naming of variables, for they must not be any of 
 
 ##primitive data types
 
-In the JavaScript language, we have access to the following {% include inline-resource.html resource="glossary-primitive" label="primitive data types" %}; `Number`, `String`, `Boolean`, `null` and `undefined`.
+In the JavaScript language, we have access to the following {% include inline-resource.html resource="glossary-primitive" label="primitive data types" %}; `Number`, `String`, `Boolean`, `null` and `undefined`. A string can also be constructed from unicode values using {% include inline-resource.html resource="docs-string-fromcharcode" code="String.fromCharCode()" %}:
 
 {% include codepen-sample.html title="fundamentals - primitive data types" slug="epivf" %}
 
@@ -65,7 +67,9 @@ As part of numberic arithmetic, it is possible to get `NaN`,  `Infinity` and `-I
 
 {% include codepen-sample.html title="fundamentals - mathematics of NaN and Infinity" slug="GLAic" %}
 
-Before we leave arithmetic operators, lets consider how they operate with strings and booleans.  When using strings:
+Before we leave arithmetic operators, lets consider how they operate with strings and booleans.
+
+When using strings, concatenation can be performed with the addition operator or {% include inline-resource.html resource="docs-string-concat" code="concat()" %}:
 
 {% include codepen-sample.html title="fundamentals - arithmetic operations with strings" slug="hbrqj" %}
 
