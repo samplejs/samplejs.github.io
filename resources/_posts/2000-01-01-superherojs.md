@@ -1,9 +1,9 @@
 ---
 layout: resource
-title: "Superhero.js"
-type: web
-resourceid: superherojs
 link: http://superherojs.com/
+resourceid: superherojs
 source: "Kim Joar Bekkelund, Mads Mobæk, and Olav Bjørkøy"
+title: Superhero.js
+type: web
 ---
 

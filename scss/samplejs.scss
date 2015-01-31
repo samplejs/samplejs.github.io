@@ -185,6 +185,16 @@ ul.resources {
         }
     }
 
+    h2 span.badge {
+        @include resource-badge;
+        font-size: 0.5em;
+        text-transform: none;
+        background: #d6dadc;
+        border-color: #717c84;
+        color: #717c84;
+        border-width: 0 .5em 0 0;
+    }
+
     .meta {
       color: #aaa;
     }
