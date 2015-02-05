@@ -1,7 +1,7 @@
 ---
 layout: sample
 title: 'string manipulation and regular expressions'
-description: 'Exploring string manipulation techniques and where regular expressions fit in.'
+description: 'Exploring string manipulation and where regular expressions fit in.'
 resources: [
     docs-intl,
     docs-string-prototype-localecompare,
