@@ -42,7 +42,7 @@ The are limits to the {% include inline-resource.html label="minimum / maximum d
 
 The browser looks to perform animations at 30 - 60 fps, and is aware of the time it takes to render the page. On your own, it is hard to predict when the browser is ready to performa a page render. When you read a location property of a {% include inline-resource.html label="Element" resource="docs-element" %} you may trigger a layout recalculation and when you change a style attribute you may trigger addition repaint processing.
 
-To only perform work when the browser is ready, {% include inline-resource.html label="window.requestAnimationFrame()" resource="docs-window-requestanimationframe" %} can be used:
+To only perform work when the browser is ready, {% include inline-resource.html code="window.requestAnimationFrame()" resource="docs-window-requestanimationframe" %} can be used:
 
 {% include codepen-sample.html title="asynchrony - requesting the animation frame" slug="ZYOvxV" %}
 

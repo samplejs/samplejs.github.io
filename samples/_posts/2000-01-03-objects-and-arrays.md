@@ -49,7 +49,7 @@ Arrays can be created empty or with an initial set of values. There are several 
 
 
 ##is it an array?
-When checking whether a variable is an array, the {% include inline-resource.html code="typeof" resource="docs-typeof" %} operator should not be used.  Instead use {% include inline-resource.html code="Array.isArray" resource="docs-array-isarray" %} function:
+When checking whether a variable is an array, the {% include inline-resource.html code="typeof" resource="docs-typeof" %} operator should not be used.  Instead use {% include inline-resource.html code="Array.isArray()" resource="docs-array-isarray" %} function:
 
 {% include codepen-sample.html title="objects and arrays - typeof array" slug="ICHxg" %}
 
